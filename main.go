@@ -44,6 +44,7 @@ func main() {
 		},
 		HideHelp: false,
 	})
+	
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 	err := bot.Listen(ctx)
